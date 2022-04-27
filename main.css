@@ -1,0 +1,11 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, span{
+    color: darkviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    color: aquamarine;
+}
