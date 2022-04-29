@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Block Element Modifier - Bloco__Elemento--Modificador -->
+
+    <!-- Padronização para 
+        classes de elementos utilizamos 2x '__' (underline)
+    
+        Ex. .list__item, .list__title 
+    
+        Para classe de modificadores utilizamos 2x '--' (tracos)
+        Ex. list__item--highlight, .list__author--active
+
+        O que é um bloco?
+        Basicamente um bloco é um container cujos conteúdos são elementos de marcação HTML.
+        Ex. -->
+
+    <ul class="list"></ul>
+
+    <!-- ===================================================================================-->
+    <!-- O que é um elemento? O elemento é uma 'peça' dentro do bloco. Ex. -->
+    <!-- Bloco -->
+    <ul class="list">
+        <!-- Elemento-->
+        <li class="list__item publication">
+            <h2 class="publication__title">Minha Publicação</h2>
+        </li>
+        <li class="list__item publication">
+            <h2 class="publication__title">Minha Publicação 2</h2>
+        </li>
+        <li class="list__item publication">
+            <h2 class="publication__title">Minha Publicação 3</h2>
+        </li>
+    </ul>
+    <!--- Ideal que o elemento não esteja dentro de outro.-->
+    <li class="list__item--publication">
+        <h2 class="list__item__publication__title">Minha Publicação 1</h2>
+    </li>
+
+    <!-- O que é um modificador?
+        Modificadores são as classes que alteram os nossos 
+        elementos ou blocos exmplo: -->
+    <button class="button button--blue button--outline">Click Me</button>
+</body>
+</html>
+
+<style>
+    /* Block Elemento Pai */
+    .list{
+        padding: 15px 15px 15px 5px;    
+        color:gray;
+    }
+
+    /* Element elemento filho */
+    .list__item{
+        padding: 5px;
+        margin-left: 30px;
+    }
+
+    .publication{
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+    .publication__title{
+        text-transform: uppercase;
+    }
+</style>

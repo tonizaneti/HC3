@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC - Model View Controller</title>
+</head>
+<body>
+    <h1>MVC - Model View Controller</h1>
+    <p>Padrão arquitetural que divide os elementos de nossa aplicação em três camadas.</p>
+    <ul>
+        <li>Modelo
+            <ul>
+                <li>*   Regras de Negócio</li>
+                <li>*   Encapsula dados</li>
+                <li>*   Prover notificações através  da Interface(INotifyPropertyChanged)</li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>Visão
+            <ul>
+                <li>*   Camada de Interação do Usuário com a Interação</li>
+                <li>*   Renderiza componentes que fazem parte da experiência da aplicação</li>
+                <li>*   Define aparência e estrutura que o usuário visualiza na tela</li>
+                <li>*   Normalmente contém um Code-Behind sobre a lógica dessa interface</li>
+                <li>*   Deve Possuir um Binding Context indicando qual ViewModel está referenciada</li>
+            </ul>
+        </li>
+    </ul>
+    <li>ViewModel
+        <ul>
+            <li>*   Trata de lógica de controles</li>
+            <li>*   Não conhece a View</li>
+            <li>*   Lança notificações de estado ou de alterações (OnNotifyPropertyChanged)</li>    
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
